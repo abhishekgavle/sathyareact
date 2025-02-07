@@ -35,7 +35,7 @@ function App() {
         <div className="container-fluid">
           <Link to="/Home" className="navbar-brand d-flex align-items-center">
             <h1 className="heading">QuickCart</h1>
-            <img src="/public/aaaaa.gif" alt="Cart Icon" className="cart-icon ms-2" width={40} height={40} />
+            <img src="aaaaa.gif" alt="Cart Icon" className="cart-icon ms-2" width={40} height={40} />
           </Link>
           <button
             className="navbar-toggler"

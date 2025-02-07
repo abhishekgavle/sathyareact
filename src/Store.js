@@ -51,16 +51,15 @@ const productSlice = createSlice({
       { name: 'Mother Dairy Full Cream Milk', price: 62, image: 'MotherDairy.jpeg' },  
       { name: 'Nestle A+ Slim Milk', price: 75, image: 'Nestle.jpeg' },  
       { name: 'Heritage Farm Fresh Milk', price: 64, image: 'Heritage.jpeg' },  
-      { name: 'Pride of Cows Organic Milk', price: 120, image: 'PrideOfCows.jpeg' },  
-      { name: 'Country Delight Cow Milk', price: 82, image: 'CountryDelight.jpeg' },  
-      { name: 'Dairy Best Buffalo Milk', price: 72, image: 'DairyBest.jpeg' },  
-      { name: 'Aavin Tetra Pak Toned Milk', price: 50, image: 'Aavin.jpeg' },  
-      { name: 'Britannia UHT Milk', price: 70, image: 'Britannia.jpeg' },  
-      { name: 'Ananda Full Cream Milk', price: 69, image: 'Ananda.jpeg' },  
-      { name: 'Sanchi Premium Milk', price: 66, image: 'Sanchi.jpeg' },  
-      { name: 'Sri Sri Tattva Cow Milk', price: 90, image: 'SriSri.jpeg' },  
-      { name: 'Jersey Toned Milk', price: 60, image: 'Jersey.jpeg' },  
-      { name: 'Gowardhan Full Cream Milk', price: 68, image: 'Gowardhan.jpeg' }  
+      { name: 'Pride of Cows Organic Milk', price: 120, image: 'https://prideofcows.in/prideofcows/storage/upload/kaAYzPHpXKs8qjaojDq9O8EQJ4Kb3zkT.png' },  
+      { name: 'Country Delight Cow Milk', price: 82, image: 'https://th.bing.com/th/id/OIP.A4th-I3C6jbIPr7cjL4NOgHaHa?rs=1&pid=ImgDetMain' },  
+      { name: 'Dairy Best Buffalo Milk', price: 72, image: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/06c99327418999.58d22c0c9780e.jpg' },  
+      { name: 'Aavin Tetra Pak Toned Milk', price: 50, image: 'https://media.nedigital.sg/fairprice/fpol/media/images/product/XL/90014846_XL1.jpg' },  
+      { name: 'Britannia UHT Milk', price: 70, image: 'https://adamscreation.com/images/work/britannia/milk.jpg' },  
+      { name: 'Ananda Full Cream Milk', price: 69, image: 'https://ananda.in/wp-content/uploads/2020/12/double-toned-milk-min.webp' },  
+      { name: 'Sanchi Premium Milk', price: 66, image: 'https://5.imimg.com/data5/SELLER/Default/2021/3/LZ/JF/FU/125779254/sanchi-milk-1000x1000.jpg' },  
+      { name: 'Sri Sri Tattva Cow Milk', price: 90, image: 'https://tiimg.tistatic.com/fp/1/007/516/sri-sri-nutrition-enriched-pure-and-natural-100-cows-milk-deshi-ghee-563.jpg' },  
+     
     ]
     
   },
