@@ -12,7 +12,7 @@ function Header() {
         <Link to="/">Home</Link>
         <Link to="/veg">Veg Items</Link>
         <Link to="/NONveg">NON Veg Items</Link>
-        <Link to="/Milk">NON Veg Items</Link>
+     
       </nav>
     </header>
   );
