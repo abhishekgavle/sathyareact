@@ -163,4 +163,9 @@
 .footer .social-icons i:hover {
   color: #f39c12;
 }
- 
+@media screen and (max-width: 768px) {
+  /* Mobile specific styles */
+  .menu-bar {
+      display: block; /* Ensure it's not hidden */
+  }
+}
