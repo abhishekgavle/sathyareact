@@ -9,7 +9,7 @@ import Contact from "./Contact";
 import About from "./Aboutus";
 import Milk from "./Milk";
 import Notfound from "./Notfound";
-import Login from "./login";
+import Login from "./Login";
 import { logout } from "./Store";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
