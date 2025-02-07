@@ -6,6 +6,7 @@ import vegImage from "./assets/veg.png"; // Import image from assets folder
 function Header() {
   return (
     <header className="header">
+     
       <h1>Food Lovers</h1>
       <nav>
         <Link to="/">Home</Link>
@@ -56,6 +57,18 @@ function Home() {
         <Link to="/milk" className="veg-item">
           <img src="https://th.bing.com/th/id/OIP.mozs5F8l_QuJFbFXw98mRAHaHZ?w=195&h=195&c=7&r=0&o=5&pid=1.7" alt="Navigate to Desserts" className="veg-image" />
           <h5>Milk Items</h5>
+        </Link>
+        <Link to="/Fastfood" className="veg-item">
+          <img src="https://images.unsplash.com/photo-1594179047519-f347310d3322?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Navigate to Desserts" className="veg-image" />
+          <h5>Fast Food </h5>
+        </Link>
+        <Link to="/Snack" className="veg-item">
+          <img src="https://images.unsplash.com/photo-1571865402713-98ba5a56f12b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Navigate to Desserts" className="veg-image" />
+          <h5>Snack </h5>
+        </Link>
+        <Link to="/Bakery" className="veg-item">
+          <img src="https://images.unsplash.com/photo-1583338917451-face2751d8d5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Navigate to Desserts" className="veg-image" />
+          <h5>Bakery </h5>
         </Link>
       </div>
 

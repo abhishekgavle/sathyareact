@@ -14,6 +14,10 @@ import { logout } from "./Store";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { useState } from "react";
+import FastFood from "./FastFood";
+import Snack from "./Snack";
+import Bakery from "./Bakery";
+
 
 function App() {
   const dispatch = useDispatch();
@@ -62,12 +66,40 @@ function App() {
                 Non-Veg
                 <img src="restaurant.png" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
               </Link>
-              <Link to="/Orders" className="nav-link">Orders</Link>
-              <Link to="/Aboutus" className="nav-link">About</Link>
-              <Link to="/Contact" className="nav-link">Contact</Link>
-              <Link to="/Milk" className="nav-link">Milk</Link>
+              <Link to="/FastFood" className="nav-link">
+               Fast Food
+                <img src="burger.gif" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
+              </Link>
+              <Link to="/Milk" className="nav-link">Milk
+              <img src="milk.gif" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
+              </Link>
+            
+             <Link to="/Snack" className="nav-link">
+                  Snack
+                <img src="snack.gif" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
+              </Link>
+              <Link to="/ Bakery" className="nav-link">
+                  Bakery
+                <img src="cake.gif" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
+              </Link>
+                
+                
+            
+              <Link to="/Orders" className="nav-link">Orders
+              <img src="order.gif" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
+              </Link>
+              <Link to="/Aboutus" className="nav-link">About
+              <img src="information.gif" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
+             </Link>
+              <Link to="/Contact" className="nav-link">Contact
+              
+              <img src="contact.gif" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
+              </Link>
+           
+             
               <Link to="/cart" className="nav-link">
                 Cart
+                <img src="shopping-cart.gif" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
                 <span className="badge bg-warning text-dark ms-2">{totalItem}</span>
               </Link>
             </div>
@@ -110,6 +142,9 @@ function App() {
       <Route path="/Home" element={<Home searchQuery={searchQuery} />} />
   <Route path="/Veg" element={<Veg searchQuery={searchQuery} />} />
   <Route path="/NONveg" element={<NONveg searchQuery={searchQuery} />} />
+  <Route path="/FastFood" element={<FastFood searchQuery={searchQuery} />} />
+  <Route path="/Snack" element={<Snack searchQuery={searchQuery} />} />
+  <Route path="/Bakery" element={<Bakery searchQuery={searchQuery} />} />
   <Route path="/Orders" element={<Orders />} />
   <Route path="/Aboutus" element={<About />} />
   <Route path="/Contact" element={<Contact />} />
