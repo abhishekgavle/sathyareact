@@ -1,7 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Home from "./Home";
-import Veg from "./veg";
+import Veg from "./Veg";
 import NONveg from "./NONveg";
 import Cart from "./Cart";
 import Orders from "./Orders";
