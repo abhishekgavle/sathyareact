@@ -107,7 +107,7 @@ function App() {
       </nav>
       <Routes>
       <Route path="/" element={<Home searchQuery={searchQuery} />} />
-
+      <Route path="/Home" element={<Home searchQuery={searchQuery} />} />
   <Route path="/Veg" element={<Veg searchQuery={searchQuery} />} />
   <Route path="/NONveg" element={<NONveg searchQuery={searchQuery} />} />
   <Route path="/Orders" element={<Orders />} />
