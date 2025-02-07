@@ -52,15 +52,15 @@ function App() {
             <div className="navbar-nav ms-auto">
               <Link to="/Home" className="nav-link">
                 Home
-                <img src="public/house.gif" alt="Home Icon" className="cart-icon ms-1" width={25} height={25} />
+                <img src="house.gif" alt="Home Icon" className="cart-icon ms-1" width={25} height={25} />
               </Link>
               <Link to="/veg" className="nav-link">
                 Veg
-                <img src="public/healthy-food.gif" alt="Veg Icon" className="cart-icon ms-1" width={25} height={25} />
+                <img src="healthy-food.gif" alt="Veg Icon" className="cart-icon ms-1" width={25} height={25} />
               </Link>
               <Link to="/NONveg" className="nav-link">
                 Non-Veg
-                <img src="public/restaurant.png" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
+                <img src="restaurant.png" alt="Non-Veg Icon" className="cart-icon ms-1" width={25} height={25} />
               </Link>
               <Link to="/Orders" className="nav-link">Orders</Link>
               <Link to="/Aboutus" className="nav-link">About</Link>
@@ -107,7 +107,7 @@ function App() {
       </nav>
       <Routes>
       <Route path="/" element={<Home searchQuery={searchQuery} />} />
-  <Route path="/Home" element={<Home searchQuery={searchQuery} />} />
+
   <Route path="/Veg" element={<Veg searchQuery={searchQuery} />} />
   <Route path="/NONveg" element={<NONveg searchQuery={searchQuery} />} />
   <Route path="/Orders" element={<Orders />} />
