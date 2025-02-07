@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
-import vegImage from "./assets/veg.png"; // Import image from assets folder
+
 
 // Header Component
 function Header() {
@@ -12,6 +12,7 @@ function Header() {
         <Link to="/">Home</Link>
         <Link to="/veg">Veg Items</Link>
         <Link to="/NONveg">NON Veg Items</Link>
+        <Link to="/Milk">NON Veg Items</Link>
       </nav>
     </header>
   );
