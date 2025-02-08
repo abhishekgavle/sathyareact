@@ -36,7 +36,7 @@ const productSlice = createSlice({
     NONveg: [
       { name: 'chicken', price: 6542, image: 'https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Curry-recipe.jpg' },
       { name: 'mutton', price: 645.4, image: 'https://www.thespruceeats.com/thmb/i2zhq0qXPHPz1NZ5xQ-5ILr1jsc=/5001x3329/filters:fill(auto,1)/goat-mutton-curry-1957594-hero-01-afaf638173cd47d595c7ad99a018cf01.jpg' },
-      { name: 'fish', price: 675.4, image: 'fish.jpeghttps://thumbs.dreamstime.com/b/delicious-roasted-fish-exotic-herbs-spices-homemade-spicy-traditional-roasted-fish-served-green-salads-rustic-140768912.jpg' },
+      { name: 'fish', price: 675.4, image: 'https://thumbs.dreamstime.com/b/delicious-roasted-fish-exotic-herbs-spices-homemade-spicy-traditional-roasted-fish-served-green-salads-rustic-140768912.jpg' },
       { name: 'prawns', price: 845.4, image: 'https://www.recipetineats.com/wp-content/uploads/2020/09/Creamy-Garlic-Prawns_8.jpg?resize=650' },
 
       { name: 'lobster', price: 3500.9, image: 'https://th.bing.com/th/id/OIP.2pvStb9-d1eYE7t2HYhzlAHaKX?rs=1&pid=ImgDetMain' },
