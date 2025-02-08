@@ -11,7 +11,7 @@ function Cart() {
   const cartItems = cartObjects.map((item, index) => (
     <li key={index} className="cart-item">
       <div className="cart-item-details">
-        <span className="cart-item-name">{item.name}</span> - 
+        <span className="cart-item-name">{item.name}</span> -
         <span className="cart-item-price">${item.price}</span>
         <img src={item.image} alt={item.brand} />
       </div>
@@ -23,7 +23,7 @@ function Cart() {
       <button className="cart-item-remove" onClick={() => dispatch(removeItem(item))}>Remove</button>
     </li>
   ));
-
+  const [couponCodePercent, setCouponCodePercent] = useState(0);
   const [discount, setDiscount] = useState(0);
   const [showDiscount, setShowDiscount] = useState(false);
   const [couponCode, setCouponCode] = useState('');
@@ -32,28 +32,30 @@ function Cart() {
   // Calculate totals
   const totalPrice = cartObjects.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const discountAmount = (totalPrice * discount) / 100;
-  const finalAmount = totalPrice - discountAmount;
+  // const finalAmount = totalPrice - discountAmount;
+  const couponDiscAmt = totalPrice * couponCodePercent / 100;
+  const finalAmount = totalPrice - (discountAmount + couponDiscAmt);
 
   // Handle coupon application
   const handleCoupon = () => {
     switch (couponCode.toUpperCase()) {
-      case 'RATAN10':
-        setDiscount(10);
+      case '  ':
+        setCouponCodePercent(10);
         setShowDiscount(true);
         setCouponError("");
         break;
       case 'RATAN20':
-        setDiscount(20);
+        setCouponCodePercent(20);
         setShowDiscount(true);
         setCouponError("");
         break;
       case 'RATAN30':
-        setDiscount(30);
+        setCouponCodePercent(30);
         setShowDiscount(true);
         setCouponError("");
         break;
       case 'RATAN40':
-        setDiscount(40);
+        setCouponCodePercent(40);
         setShowDiscount(true);
         setCouponError("");
         break;
@@ -89,8 +91,11 @@ function Cart() {
             <h3>Your total price: ${totalPrice.toFixed(2)}</h3>
             {showDiscount && (
               <div>
-                <h3>Your discount: {discount}%</h3>
-                <h3>Your discount amount: ${discountAmount.toFixed(2)}</h3>
+                <h3>Your discount: {discount}%</h3> 
+                <h3> YOU SAVED : ${discountAmount.toFixed(2)}</h3>
+                <h6 className="text-primary">Coupon Applied: {couponCode}</h6>
+                <h6 className="text-danger">Coupon Discount: {couponCodePercent}%</h6>
+                <h6 className="text-success">You Saved: ₹{couponDiscAmt.toFixed(2)}</h6> 
               </div>
             )}
             <h3>Your amount to pay: ${finalAmount.toFixed(2)}</h3>
@@ -100,7 +105,7 @@ function Cart() {
             <button className="discount-button" onClick={() => { setDiscount(30); setShowDiscount(true); }}>30% Discount</button>
           </div>
 
-          <div className="coupon-section">
+          <div className="coupon-section"> 
             <input
               type="text"
               value={couponCode}

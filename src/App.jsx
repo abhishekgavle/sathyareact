@@ -38,7 +38,7 @@ function App() {
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm py-2">
         <div className="container-fluid">
           <Link to="/Home" className="navbar-brand d-flex align-items-center">
-            <h1 className="heading">QuickCart</h1>
+            <h1 className="heading">FoodCart</h1>
             <img src="aaaaa.gif" alt="Cart Icon" className="cart-icon ms-2" width={40} height={40} />
           </Link>
           <button
