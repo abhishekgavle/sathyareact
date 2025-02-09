@@ -49,7 +49,7 @@ const productSlice = createSlice({
       { name: 'turkey breast', price: 3500.5, image: 'https://th.bing.com/th/id/OIP.G-UB8bP4MKDUQ3qc_ixjJgHaHa?rs=1&pid=ImgDetMain' },
       { name: 'mutton chops', price: 4000.7, image: 'https://th.bing.com/th/id/OIP.z7k7dzopPOgBhKFd9tZ2agHaE4?rs=1&pid=ImgDetMain' },
       { name: 'fried calamari', price: 2700.4, image: 'https://www.willcookforsmiles.com/wp-content/uploads/2021/07/Calamari-6-1024x1536.jpg' },
-      { name: 'roast pork', price: 3300.2, image: 'roast_pork.jpeg' }
+    
       
     ],
     Milk: [  
@@ -78,7 +78,7 @@ const productSlice = createSlice({
       { name: 'Chicken Burger', price: 2000.7, image: 'https://assets.unileversolutions.com/recipes-v2/243652.jpg' },
       { name: 'Onion Rings', price: 700.4, image: 'https://th.bing.com/th/id/OIP.8oZhbEsexOYlcofWl4C6rQHaE7?rs=1&pid=ImgDetMain' },
       { name: 'Milkshake', price: 1200.2, image: 'https://www.julieseatsandtreats.com/wp-content/uploads/2021/06/How-to-Make-a-Milkshake-10-of-10.jpg' },
-      { name: 'Fish Sandwich', price: 1400.6, image: 'fish_sandwich.jpeghttps://th.bing.com/th/id/OIP.hf_06MVDDCeGHBbo-PTVKgHaHa?rs=1&pid=ImgDetMain' },
+      { name: 'Fish Sandwich', price: 1400.6, image: 'https://th.bing.com/th/id/OIP.hf_06MVDDCeGHBbo-PTVKgHaHa?rs=1&pid=ImgDetMain' },
       { name: 'Spicy Chicken Wrap', price: 1600.8, image: 'https://th.bing.com/th/id/OIP.Agxx07wnkwDkqKopjejRQgHaE8?rs=1&pid=ImgDetMain' },
       { name: 'Taco', price: 900.5, image: 'https://images3.alphacoders.com/248/248457.jpg' },
       { name: 'Beef Burrito', price: 1300.2, image: 'https://schweidandsons.com/wp-content/uploads/2020/06/Recipe-Beef-Burritos-scaled.jpg' },

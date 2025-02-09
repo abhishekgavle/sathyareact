@@ -1,12 +1,25 @@
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "./Store";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Snack() {
-  const snackItems = useSelector((state) => state.product.Snack); // Assumes you have a Snack section in your Redux store
+  const snackItems = useSelector((state) => state.product.Snack);
   const dispatch = useDispatch();
 
-  const finalItems = snackItems.map((item, index) => (
+  const itemsPerPage = 6;
+  const totalPages = Math.ceil(snackItems.length / itemsPerPage);
+  const [pageNumber, setPageNumber] = useState(0);
+
+  const pageStartItemIndex = pageNumber * itemsPerPage;
+  const pageEndItemIndex = pageStartItemIndex + itemsPerPage;
+  const currentPageItems = snackItems.slice(pageStartItemIndex, pageEndItemIndex);
+
+  const handlePage = (page) => {
+    setPageNumber(page);
+  };
+
+  const finalItems = currentPageItems.map((item, index) => (
     <div key={index} className="col-md-4 mb-4">
       <div className="card shadow-sm">
         <img
@@ -29,10 +42,38 @@ function Snack() {
     </div>
   ));
 
+  const buttons = Array.from({ length: totalPages }, (_, index) => (
+    <button
+      key={index}
+      className={`btn ${index === pageNumber ? "btn-primary" : "btn-outline-primary"} mx-1`}
+      onClick={() => handlePage(index)}
+      disabled={index === pageNumber}
+    >
+      {index + 1}
+    </button>
+  ));
+
   return (
     <div className="container my-4">
       <h1 className="text-center mb-4 text-primary">Welcome to the Snack Section</h1>
       <div className="row">{finalItems}</div>
+      <div className="d-flex justify-content-center mt-4">
+        <button
+          className="btn btn-secondary mx-2"
+          onClick={() => handlePage(pageNumber - 1)}
+          disabled={pageNumber === 0}
+        >
+          Previous
+        </button>
+        {buttons}
+        <button
+          className="btn btn-secondary mx-2"
+          onClick={() => handlePage(pageNumber + 1)}
+          disabled={pageNumber === totalPages - 1}
+        >
+          Next
+        </button>
+      </div>
     </div>
   );
 }
