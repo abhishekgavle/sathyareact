@@ -13,7 +13,8 @@ import Notfound from "./Notfound";
 import FastFood from "./FastFood";
 import Snack from "./Snack";
 import Bakery from "./Bakery";
-import Login from "./login.jsx";
+import Login from "./Login";
+
 
 import { logout } from "./Store";
 import "bootstrap/dist/css/bootstrap.min.css";
