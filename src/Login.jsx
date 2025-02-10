@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Login from "./login.jsx";
+import Login from "./Login";
 function login() {
   let username = useRef(null);
   let password = useRef(null);
