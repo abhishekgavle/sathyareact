@@ -6,30 +6,13 @@ import "./Home.css";
 function Header() {
   return (
     <header className="bg-dark text-white py-3 shadow-sm">
-    <div className="container d-flex justify-content-between align-items-center">
-      <h1 className="h4 mb-0">🍴 Food Lovers</h1>
-      <nav>
-        <ul className="nav">
-          <li className="nav-item">
-            <Link to="/" className="nav-link text-white">
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/veg" className="nav-link text-white">
-              Veg Items
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/NONveg" className="nav-link text-white">
-              Non-Veg Items
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
+  <div className="container d-flex justify-content-center align-items-center">
+    <h1 className="h4 mb-0 d-flex align-items-center">
+      <span role="img" aria-label="food-icon" className="me-2">🍴</span> 
+      <span className="fw-bold">Food Lovers</span>
+    </h1>
+  </div>
+</header>
   );
 }
 
@@ -37,7 +20,9 @@ function Header() {
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2025 Food Lovers. All Rights Reserved.</p>
+      <p>&copy; 2025 Food Lovers. All Rights Reserved.
+        @abhi
+      </p>
 
       <div className="footer-links">
         <Link to="/privacy-policy">Privacy Policy</Link>
@@ -51,7 +36,6 @@ function Footer() {
         <i className="fab fa-instagram-square"></i>
       </div>
 
-      <p>Follow us on social media for the latest updates and offers!</p>
     </footer>
   );
 }
@@ -67,7 +51,7 @@ function Home() {
           <h5>Veg Items</h5>
         </Link>
         <Link to="/NONveg" className="veg-item">
-          <img src="https://th.bing.com/th/id/OIP.fi3MbrqZKpcueVW8Z6ZxjQHaE8?w=348&h=190&c=7&r=0&o=5&pid=1.7" alt="Navigate to NON Veg" className="veg-image" />
+          <img src="https://th.bing.com/th/id/R.e0a2641ebe0391da31ae49f16c2aa4fb?rik=jGoo4326dNLPZA&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-2%2fMeat-Dishes-Wallpaper-03833.jpg&ehk=wJia%2bpXdj4x272Dnp1usdg6%2fLtacuz8HEuSsrEM%2fTdk%3d&risl=&pid=ImgRaw&r=0" alt="Navigate to NON Veg" className="veg-image" />
           <h5>NON Veg Items</h5>
         </Link>
         <Link to="/milk" className="veg-item">
