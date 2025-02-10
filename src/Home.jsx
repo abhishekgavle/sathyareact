@@ -5,16 +5,31 @@ import "./Home.css";
 // Header Component
 function Header() {
   return (
-    <header className="header">
-     
-      <h1>Food Lovers</h1>
+    <header className="bg-dark text-white py-3 shadow-sm">
+    <div className="container d-flex justify-content-between align-items-center">
+      <h1 className="h4 mb-0">🍴 Food Lovers</h1>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/veg">Veg Items</Link>
-        <Link to="/NONveg">NON Veg Items</Link>
-     
+        <ul className="nav">
+          <li className="nav-item">
+            <Link to="/" className="nav-link text-white">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/veg" className="nav-link text-white">
+              Veg Items
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/NONveg" className="nav-link text-white">
+              Non-Veg Items
+            </Link>
+          </li>
+        </ul>
       </nav>
-    </header>
+    </div>
+  </header>
+  
   );
 }
 
