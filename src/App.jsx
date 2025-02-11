@@ -13,13 +13,14 @@ import Notfound from "./Notfound";
 import FastFood from "./FastFood";
 import Snack from "./Snack";
 import Bakery from "./Bakery";
-import Login from "./Login";
+
 
 
 import { logout } from "./Store";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Veg from "./veg";
+import Login from "./login";
 
 
 

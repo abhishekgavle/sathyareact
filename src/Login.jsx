@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Login from "./Login";
-function login() {
+import { login } from "./Store";
+function Login() {
   let username = useRef(null);
   let password = useRef(null);
   let dispatch = useDispatch();
@@ -10,7 +10,7 @@ function login() {
 
   let onLogin = () => {
     if (username.current.value === "abhi" && password.current.value === "swe@123") {
-      dispatch(Login(username.current.value));
+      dispatch(login(username.current.value));
       navigate("/home");
     } else {
       alert("Your credentials are wrong, please check!");
@@ -38,4 +38,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;
