@@ -9,7 +9,7 @@ function Header() {
   <div className="container d-flex justify-content-center align-items-center">
     <h1 className="h4 mb-0 d-flex align-items-center">
       <span role="img" aria-label="food-icon" className="me-2">🍴</span> 
-      <span className="fw-bold">Food Lovers</span>
+      <span className="fw-bold">Food Loverss</span>
     </h1>
   </div>
 </header>
