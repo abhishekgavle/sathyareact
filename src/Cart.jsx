@@ -116,8 +116,10 @@ function Cart() {
           </div>
 
           {couponError && <p className="coupon-error">{couponError}</p>}
+          <button className="complete-purchase-button" onClick={clearCart()}>Clear Cart</button>
 
           <button className="complete-purchase-button" onClick={handleCompletePurchase}>Complete Purchase</button>
+
         </div>
       ) : (
         <h1>Your cart is empty</h1>

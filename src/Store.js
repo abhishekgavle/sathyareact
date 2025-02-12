@@ -31,6 +31,7 @@ const productSlice = createSlice({
   { name: 'asparagus', price: 550.7, image: 'https://cdn.pixabay.com/photo/2023/05/10/14/15/green-asparagus-7984151_640.jpg' },
   { name: 'radish', price: 130.8, image: 'https://www.highmowingseeds.com/media/catalog/product/cache/6cbdb003cf4aae33b9be8e6a6cf3d7ad/2/8/2855-1.jpg' },
   { name: 'pumpkin', price: 300.5, image: 'https://th.bing.com/th/id/OIP.meZnoWF-0wgoUL_amNAkDgHaJQ?rs=1&pid=ImgDetMain' },
+  { name: 'pumpkin', price: 300.5, image: 'https://th.bing.com/th/id/OIP.meZnoWF-0wgoUL_amNAkDgHaJQ?rs=1&pid=ImgDetMain' },
 
     ],
     NONveg: [
