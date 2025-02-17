@@ -20,7 +20,7 @@ import { logout } from "./Store";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Veg from "./Veg";
-import Login from "./login";
+import Login from "./Login";
 
 
 
