@@ -15,7 +15,7 @@ body {
 /* Navbar Customizations */
 .custom-navbar {
   background: linear-gradient(90deg, #3f51b5, #2196f3);
-  box-shadow: 0 4px 6px rgba(197, 9, 9, 0.1);
+  box-shadow: 0 4px 6px rgba(156, 142, 142, 0.13);
   padding: 0.5rem 1rem;
 }
 

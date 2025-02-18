@@ -25,6 +25,7 @@ import Login from "./Login";
 
 
 
+
 function App() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
@@ -61,7 +62,7 @@ function App() {
                 <Link to="/Home" className="nav-link text-light">
                   Home
                   <img
-                    src="house.gif"
+                    src="home.png"
                     alt="Home Icon"
                     className="cart-icon ms-1"
                     width={25}
