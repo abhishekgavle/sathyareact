@@ -57,143 +57,67 @@ function App() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <Link to="/Home" className="nav-link text-light">
-                  Home
-                  <img
-                    src="home.png"
-                    alt="Home Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/Veg" className="nav-link text-light">
-                  Veg
-                  <img
-                    src="healthy-food.gif"
-                    alt="Veg Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/NONveg" className="nav-link text-light">
-                  Non-Veg
-                  <img
-                    src="restaurant.png"
-                    alt="Non-Veg Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/FastFood" className="nav-link text-light">
-                  Fast Food
-                  <img
-                    src="burger.gif"
-                    alt="Fast Food Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/Milk" className="nav-link text-light">
-                  Milk
-                  <img
-                    src="milk.gif"
-                    alt="Milk Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/Snack" className="nav-link text-light">
-                  Snack
-                  <img
-                    src="snack.gif"
-                    alt="Snack Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/Bakery" className="nav-link text-light">
-                  Bakery
-                  <img
-                    src="cake.gif"
-                    alt="Bakery Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/Orders" className="nav-link text-light">
-                  Orders
-                  <img
-                    src="order.gif"
-                    alt="Order Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/Aboutus" className="nav-link text-light">
-                  About
-                  <img
-                    src="information.gif"
-                    alt="About Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/Contact" className="nav-link text-light">
-                  Contact
-                  <img
-                    src="contact.gif"
-                    alt="Contact Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/Cart" className="nav-link text-light">
-                  Cart
-                  <img
-                    src="shopping-cart.gif"
-                    alt="Cart Icon"
-                    className="cart-icon ms-1"
-                    width={25}
-                    height={25}
-                  />
-                  <span className="badge bg-warning text-dark ms-2">
-                    {totalItem}
-                  </span>
-                </Link>
-              </li>
-            </ul>
+          <ul className="navbar-nav ms-auto">
+  <li className="nav-item ms-3">
+    <Link to="/Home" className="nav-link text-light">
+      Home
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/Veg" className="nav-link text-light">
+      Veg
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/NONveg" className="nav-link text-light">
+      Non-Veg
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/FastFood" className="nav-link text-light">
+      Fast Food
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/Milk" className="nav-link text-light">
+      Milk
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/Snack" className="nav-link text-light">
+      Snack
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/Bakery" className="nav-link text-light">
+      Bakery
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/Orders" className="nav-link text-light">
+      Orders
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/Aboutus" className="nav-link text-light">
+      About
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/Contact" className="nav-link text-light">
+      Contact
+    </Link>
+  </li>
+  <li className="nav-item ms-3">
+    <Link to="/Cart" className="nav-link text-light">
+      Cart
+      <span className="badge bg-warning text-dark ms-2">
+        {totalItem}
+      </span>
+    </Link>
+  </li>
+</ul>
+
 
             <div className="d-flex align-items-center ms-3">
             

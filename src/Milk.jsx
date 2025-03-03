@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "./Store";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from './Footer'; // Import Footer component
 
 function Milk() {
   const milkItems = useSelector((state) => state.product.Milk);
@@ -140,6 +141,9 @@ function Milk() {
           Next
         </button>
       </div>
+
+      {/* Add Footer here */}
+      <Footer />
     </div>
   );
 }

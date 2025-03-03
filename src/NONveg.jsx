@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "./Store";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from './Footer'; // Import the Footer component
 
 function NONveg() {
   const nonVegItems = useSelector((state) => state.product.NONveg);
@@ -140,6 +141,9 @@ function NONveg() {
           Next
         </button>
       </div>
+
+      {/* Add the Footer Component */}
+      <Footer />
     </div>
   );
 }

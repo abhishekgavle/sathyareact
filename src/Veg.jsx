@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "./Store";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from './Footer'; // Import the Footer component
 
 function Veg() {
   const vegItems = useSelector((state) => state.product.Veg);
@@ -51,12 +52,11 @@ function Veg() {
 
   return (
     <div className="container my-4">
-    <div className="container my-4">
-  <div className="bg-primary text-white text-center py-3 rounded shadow-sm">
-    <h3 className="mb-0">🌿 Welcome to the Fresh Veg Section 🌱</h3>
-    <p className="mb-0">Discover a variety of healthy and fresh vegetables!</p>
-  </div>
-</div>
+      <div className="bg-primary text-white text-center py-3 rounded shadow-sm">
+        <h3 className="mb-0">🌿 Welcome to the Fresh Veg Section 🌱</h3>
+        <p className="mb-0">Discover a variety of healthy and fresh vegetables!</p>
+      </div>
+
       <div className="d-flex justify-content-between align-items-center mb-4">
         <input
           type="text"
@@ -124,9 +124,7 @@ function Veg() {
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index}
-            className={`btn ${
-              index === pageNumber ? "btn-primary" : "btn-outline-primary"
-            } mx-1`}
+            className={`btn ${index === pageNumber ? "btn-primary" : "btn-outline-primary"} mx-1`}
             onClick={() => handlePage(index)}
             disabled={index === pageNumber}
           >
@@ -141,6 +139,9 @@ function Veg() {
           Next
         </button>
       </div>
+
+      {/* Footer added here */}
+      <Footer />
     </div>
   );
 }
